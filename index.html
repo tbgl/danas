@@ -1,0 +1,294 @@
+<html><head>
+	<title>Danas Berlinskas</title>
+	<title>Danas Berlinskas</title>
+	<meta property="og:title" content="Danas Berlinskas">
+	<meta property="og:url" content="https://danas.berlinskas.lt">
+	<meta property="og:image" content="x-factor.jpg">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Tomorrow&amp;display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<!-- 	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+	<link rel="manifest" href="/manifest.json">
+
+	<style>
+		html {
+			font-family: 'Tomorrow', sans-serif;
+			font-size: 18px;
+			line-height: 1.7em;
+			letter-spacing: 1px;
+			min-height: 100vh;
+			margin: 0;
+			color: #fff;
+			background: linear-gradient(6deg, #FFD078 0%, #AEC3C1 10%, #BB829B 28%, #8370A5 75%, #2697C1 100%);
+		}
+
+		body {
+			margin: 0;
+		}
+
+		#one {
+			height: 100vh;
+			width: 100vw;
+			display: flex;
+			align-content: center;
+			justify-content: center;
+		}
+
+		#logo {
+			height: 150px;
+			cursor: pointer;
+			width: 100%;
+			opacity: 0.5;
+			transition: all 200ms;
+		}
+
+		#logo:hover, .logo-activated  {
+			opacity: 1!important;
+		 	animation: wiggle 1s;
+		 	animation-iteration-count: infinite;
+		}
+
+		#lang {
+			position: fixed;
+			right: 20px;
+			top: 20px;
+			cursor: pointer;
+		}
+
+		a {
+			color: #fff;
+		}
+
+		.f {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		.c {
+			flex-basis: 100%;
+			justify-content: center;
+			align-items: center;
+			max-width: 600px;
+			margin: auto;
+			padding: 1em 2em;
+		}
+
+		.b {
+			justify-content: space-between;
+		}
+
+		.a {
+			justify-content: space-around;
+		}
+
+		.link {
+			cursor: pointer;
+			padding: 1em;
+			color: #F6BAF5;
+		}
+
+		.link:hover {
+			text-decoration: underline;
+		}
+
+		.image {
+			max-width: 600px;
+		}
+
+		@keyframes wiggle {
+		  0% { transform: translate(0px, 3px); }
+		  12.5% { transform: translate(2px, 2px); }
+		  25% { transform: translate(3px, 0px); }
+		  37.5% { transform: translate(2px, -2px); }
+		  50% { transform: translate(0px, -3px); }
+		  62.5% { transform: translate(-2px, -2px); }
+		  75% { transform: translate(-3px, 0px); }
+		  87.5% { transform: translate(-2px, 2px); }
+		  100% { transform: translate(0px, 3px); }
+		}
+
+.fadeIn {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+	</style>
+</head>
+
+<body>
+	<div id="screen"><audio preload="auto"><source src="audio.mp3" type="audio/mpeg"></audio> <div><svg id="logo" width="830px" height="831px" viewBox="0 0 830 831" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=""><title>logo</title> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M241.0425,502.079 C206.7255,502.079 184.5855,531.968 184.5855,564.44 C184.5855,598.388 204.5115,630.491 241.4115,630.491 C279.4185,630.491 299.3445,599.864 299.3445,564.809 C299.3445,530.123 277.5735,502.079 241.0425,502.079 Z M297.8685,653 L297.8685,629.015 L297.1305,629.015 C282.7395,647.834 260.9685,657.797 237.3525,657.797 C186.4305,657.797 154.3275,614.624 154.3275,566.654 C154.3275,517.208 185.6925,474.773 237.7215,474.773 C260.9685,474.773 283.1085,485.843 297.1305,504.293 L297.8685,504.293 L297.8685,348.575 L327.3885,348.575 L327.3885,653 L297.8685,653 Z M568.1125,347.079 C533.7955,347.079 511.6555,376.968 511.6555,409.44 C511.6555,443.388 531.5815,475.491 568.4815,475.491 C606.4885,475.491 626.4145,444.864 626.4145,409.809 C626.4145,375.123 604.6435,347.079 568.1125,347.079 Z M483.6115,498 L483.6115,193.575 L513.1315,193.575 L513.1315,349.293 L513.8695,349.293 C527.8915,330.843 549.6625,319.773 573.2785,319.773 C624.9385,319.773 656.6725,362.208 656.6725,411.285 C656.6725,459.624 624.5695,502.797 573.6475,502.797 C549.6625,502.797 527.8915,492.834 513.8695,474.015 L513.1315,474.015 L513.1315,498 L483.6115,498 Z" id="Combined-Shape" fill="#fff"></path> <!----></g></svg></div> <div><div id="lang">LT/EN</div></div> <div class="f a" style="margin-top: 50px; margin-bottom: 50px;"><div class="link">
+				Pradžia
+			</div> <div class="link">
+				Pamokos
+			</div> <div class="link">
+				Kontaktai
+			</div></div> <div id="f"><div class="c" style="margin-bottom: 500px;"><div><p class="fadeIn">
+						Labas. Aš Danas Berlinskas.
+						Esu muzikos atlikėjas, kūrėjas ir prodiuseris.
+					</p> <p class="fadeIn">
+						Augau muzikalioje šeimoje ir atsimenu kai būdamas 13 išgirdau brolį ir sesę grojant gitara ir pianinu.
+					</p> <p class="fadeIn">
+						Harmonija tarp dviejų instrumentų mane sužavėjo ir suteikė vidinę ramybė kokios nebuvau pajautęs iki tol. 
+					</p> <p class="fadeIn">
+						Galbūt neatsimenu melodijos kurią jie grojo, bet puikiai atsimenu kaip jaučiausi.
+					</p> <p class="fadeIn">
+						Viduje atsirado klausimas:
+						Jei jie taip gali pagroti, gal galiu ir aš? 
+					</p> <p class="fadeIn">
+						Brolis parodė kelis akordus kuriuos ilgai praktikavausi kol galėjau pagroti visą kurinį. Supratau, kad prireiks laiko norint išmokti groti geriau, bet viskas prasidėjo labai paprastai.
+					</p> <p class="fadeIn">
+						Per kitus kelis mėnesius kasdien grojau gitara. Žiūrėjau įvairius video ir greit galėjau pagroti beveik bet kokį kurinį kurį išgirsdavau. Įsijungdavau kažką kas patiko ir grodavau kartu.
+					</p> <p class="fadeIn">
+						Laikui bėgant pradėjau groti pianinu, bosine ir elektrine gitara, būgnais. Taip pat norėjau pabandyti dainuoti ir rašyti savo dainas.
+					</p> <p class="fadeIn">
+						4 metus lankiau mokyklos chorą. Dažnai grodavau gitara o choras kartu dainuodavo. Pradėjome atlikti dainas su pusbroliu ir suorganizavome pirmus pasirodymus.
+					</p> <p class="fadeIn">
+						Dalyvavau X-Faktoriaus projekte kurio metu atlikau pasirodymus gyvose transliacijose. Tai suteikė žinomumo bei galimybę susitikti ir susipažinti su vaikystės muzikiniais herojais kaip Andrius Mamontovas. Pasibaigus projektui grojau ivairiuose koncertuose, privačiuose renginiuose bei pradėjau pats rašyti dainas bei kurti.
+					</p> <p class="fadeIn">
+						Mano gyvenime muzika užima labai svarbią rolę. Ji padėjo man pereiti sudėtingus gyvenimo etapus ir nuramino kai niekas kitas negalėjo. Todėl pasirenku pasakoti tai kas man yra gyvenimas per muziką ir dalintis tuo su kitais.
+					</p></div></div> <!----> <!----></div></div>
+
+
+	<script>
+		var v = new Vue({
+		  el: '#screen',
+		  data: {
+		  	zeroPercent: {a: 0, b: 35, c:65},
+		    date: Date.now(),
+		    show: 'home',
+		    play: false,
+		    lang: 'lt',
+		    points: '460 203 463 257 387 191 443 308 377 232 394 323 343 283 363 350',
+		  },
+		  methods: {
+		  	toggleLang() {
+		  		if(this.lang === 'en') {
+		  			this.lang = 'lt'
+		  		}
+		  		else {
+		  			this.lang = 'en'
+		  		}
+		  	},
+		  	togglePlay() {
+		  		if(this.play) {
+		  			this.play = false
+		  			this.$refs.audio.pause()
+		  			// this.listen()
+		  		}
+		  		else {
+		  			this.play = true
+		  			this.$refs.audio.play()
+		  			// this.pause()
+		  		}
+		  	},
+		  	getRandom(min, max) {
+		  		return Math.random() * (max - min) + min
+		  	},
+		  	generatePoints() {
+		  		let random = this.getRandom(5,12)
+
+		  		let points = ''
+
+		  		for (random; random > 1; random--) {
+		  			points = points + this.getRandom(312, 503) + ' ' + this.getRandom(200, 361) + ' '
+		  		}
+
+		  		this.points = points
+
+		  		setTimeout(this.generatePoints, 100)
+		  	},
+		  	vol(vol) {
+		  		if(vol) {
+			  		this.$refs.audio.volume = vol
+		  		}
+		  		else {
+		  			return this.$refs.audio.volume
+		  		}
+		  	},
+		  	pause() {
+		  		let vol = this.vol()
+
+		  		let volumes = []
+
+		  		while(vol > 0.01) {
+		  			vol = vol - (vol / 600)
+		  			volumes.push(vol)
+		  		}
+
+		  		volumes.forEach(volume => {
+		  			this.vol(volume)
+		  		})
+
+		  		this.$refs.audio.pause()
+		  	},
+
+		  	listen() {
+		  		let vol = this.vol()
+
+		  		let volumes = []
+
+		  		while(vol < 0.5) {
+		  			vol = vol + (0.5 / 600)
+		  			volumes.push(vol)
+		  			console.log(vol)
+		  		}
+
+		  		this.$refs.audio.play()
+
+		  		volumes.forEach(volume => {
+		  			this.vol(volume)
+		  		})
+
+		  		
+		  	}
+
+		  },
+		  computed: {
+		  	pointsString() {
+		  		const start = '503 200 '
+		  		const end = ' 312 361'
+
+		  		return start + this.points + end
+		  	},
+		  },
+		  mounted() {
+		  	this.generatePoints()
+		  }
+		})
+	</script>
+
+
+
+
+</body></html>
